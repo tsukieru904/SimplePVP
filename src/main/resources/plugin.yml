@@ -1,0 +1,31 @@
+name: SimplePvP
+version: 1.0.0
+main: me.tsukieru.simplepvp.SimplePvpPlugin
+api-version: '26.1.2'
+author: ChatGPT
+description: PvP manager with stranger PvP toggle, whitelist PvP, GUI editor, and newbie protection.
+
+commands:
+  pvp:
+    description: Manage stranger PvP and open the editor GUI.
+    usage: /pvp <on|off|editor|help|confirm>
+    aliases: [pvpeditor]
+  pvplist:
+    description: Manage your PvP whitelist.
+    usage: /pvplist <on|off|add|remove|list> [player]
+  pvpprotect:
+    description: Manually remove your newbie protection.
+    usage: /pvpProtect
+  simplepvp:
+    description: Plugin management commands (admin only).
+    usage: /simplepvp <reload>
+    # No `permission:` here on purpose — PvpCommand#handleSimplePvp does its own
+    # simplepvp.admin check so it can show the plugin's own no-permission message.
+    # If set here, Bukkit would reject unauthorized senders before onCommand()
+    # ever runs, and its own default message would show instead of ours.
+
+permissions:
+  simplepvp.use:
+    default: true
+  simplepvp.admin:
+    default: op

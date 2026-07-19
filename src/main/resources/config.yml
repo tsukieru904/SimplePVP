@@ -1,0 +1,22 @@
+settings:
+  default-stranger-pvp: false
+  default-pvplist-mode: false
+
+storage:
+  # 儲存格式：sqlite 或 yaml
+  type: sqlite
+
+newbie-protection:
+  enabled: true
+  duration-seconds: 300
+  first-join-only: true
+
+bossbar:
+  enabled: true
+  title: "&a新手保護期 &7| 剩餘 &f{time}"
+  color: GREEN
+  style: SOLID
+
+gui:
+  editor-title: "&aPvP 編輯面板"
+  whitelist-title: "&aPvP 白名單 &7({page}/{pages})"

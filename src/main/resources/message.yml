@@ -1,0 +1,109 @@
+prefix: "&8[&aPvP&8] &r"
+
+no-permission: "&c你沒有權限使用這個指令。"
+player-only: "&c這個指令只能在遊戲內使用。"
+unknown-subcommand: "&c用法錯誤。請輸入 &f/pvp help &c查看說明。"
+player-not-found: "&c找不到玩家 &f{player}&c。"
+self-target: "&c不能對自己使用這個指令。"
+
+pvp-enabled: "&a已開啟陌生人 PvP，並關閉 PvP 列表模式。"
+pvp-disabled: "&c已關閉陌生人 PvP。"
+
+pvplist-enabled: "&a已開啟 PvP 列表模式，並關閉陌生人 PvP。"
+pvplist-disabled: "&c已關閉 PvP 列表模式。"
+
+whitelist-added: "&a已將 &f{player}&a 加入你的 PvP 列表。"
+whitelist-removed: "&c已將 &f{player}&c 從你的 PvP 列表移除。"
+whitelist-already-added: "&e&f{player}&e 已經在你的 PvP 列表中了。"
+whitelist-not-found: "&c&f{player}&c 不在你的 PvP 列表內。"
+
+whitelist-header: "&a你的 PvP 列表 &7({count} 人)"
+whitelist-empty: "&7你的 PvP 列表目前是空的。"
+whitelist-line: "&8- &f{player}"
+
+newbie-start: "&a你已進入新手保護期，剩餘 &f{time}&a。"
+newbie-end: "&7你的新手保護期已結束。"
+attack-protected-attacker: "&c你還在新手保護期內，不能攻擊其他玩家。"
+attack-protected-victim: "&c對方還在新手保護期內，無法被攻擊。"
+attack-disallowed: "&c對方目前沒有開放 PvP 給你。"
+attack-disallowed-no-open: "&c你沒有開給對方 PvP。"
+attack-disallowed-pvplist: "&c你目前是 PvP 列表模式，但沒有把對方加入白名單。"
+attack-disallowed-victim-no-open: "&c對方沒有開啟 PvP 給你。"
+attack-disallowed-victim-pvplist: "&c對方目前是 PvP 列表模式，但沒有把你加入白名單。"
+
+# 新手保護手動解除
+protect-no-protection: "&c你目前沒有新手保護期，無需解除。"
+protect-confirm-prompt:
+  - "&c&l⚠ 警告：你即將解除新手保護期！"
+  - "&7解除後將無法恢復，你可能隨時被其他玩家攻擊。"
+  - "&f請在 &e30 秒內&f 輸入 &a/pvp confirm &f確認解除。"
+protect-confirm-expired: "&c確認已超時，請重新輸入 &f/pvpProtect&c。"
+protect-confirm-no-pending: "&c你目前沒有待確認的操作。"
+protect-removed: "&a新手保護期已解除，祝你好運！"
+
+# Reload
+simplepvp-usage: "&e用法：&f/simplepvp reload"
+reload-success: "&aSimplePvP 已成功重新載入。"
+reload-failed: "&cSimplePvP 重新載入失敗，詳情請查看控制台。"
+
+# 說明訊息
+help:
+  - "&8&m-----------------------------"
+  - "&a&lSimplePvP &7指令說明"
+  - "&8&m-----------------------------"
+  - "&e/pvp on &7- &f開啟陌生人 PvP"
+  - "&e/pvp off &7- &f關閉陌生人 PvP"
+  - "&e/pvp editor &7- &f開啟 PvP 設定面板"
+  - "&e/pvp help &7- &f顯示此說明"
+  - "&e/pvplist on/off &7- &f開關 PvP 列表模式"
+  - "&e/pvplist add <玩家> &7- &f加入列表"
+  - "&e/pvplist remove <玩家> &7- &f移除列表"
+  - "&e/pvplist list &7- &f查看列表"
+  - "&e/pvpProtect &7- &f手動解除新手保護期"
+  - "&e/simplepvp reload &7- &f重新載入設定檔 &c(管理員)"
+  - "&8&m-----------------------------"
+
+gui-editor-title: "&aPvP 編輯面板"
+gui-whitelist-title: "&aPvP 白名單 &7({page}/{pages})"
+gui-button-pvp-on: "&a陌生人 PvP：開啟"
+gui-button-pvp-off: "&c陌生人 PvP：關閉"
+gui-button-list-on: "&a列表模式：開啟"
+gui-button-list-off: "&c列表模式：關閉"
+gui-button-view-list: "&e查看 PvP 列表"
+gui-button-newbie: "&b新手保護期"
+gui-button-back: "&7返回"
+gui-button-prev: "&7上一頁"
+gui-button-next: "&7下一頁"
+gui-button-remove-lore: "&c點擊移除這名玩家"
+gui-button-add-help: "&e新增請使用 &f/pvplist add <玩家>"
+
+gui-editor-lore-pvp-opened:
+  - "&7目前狀態: &a開啟"
+  - "&8"
+  - "&f點擊切換"
+gui-editor-lore-pvp-closed:
+  - "&7目前狀態: &c關閉"
+  - "&8"
+  - "&f點擊切換"
+gui-editor-lore-list-opened:
+  - "&7目前狀態: &a開啟"
+  - "&8"
+  - "&f開啟後，只有你列表中的玩家能攻擊你"
+gui-editor-lore-list-closed:
+  - "&7目前狀態: &c關閉"
+  - "&8"
+  - "&f開啟後，只有你列表中的玩家能攻擊你"
+gui-editor-lore-view-list:
+  - "&7查看與管理你的白名單"
+  - "&8"
+  - "&f點擊開啟"
+gui-editor-lore-newbie:
+  - "&7剩餘時間: &f{time}"
+  - "&8"
+  - "&f狀態會跟著時間同步"
+gui-whitelist-back-lore:
+  - "&f回到 PvP 編輯面板"
+gui-whitelist-prev-lore:
+  - "&f前往上一頁"
+gui-whitelist-next-lore:
+  - "&f前往下一頁"
